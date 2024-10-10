@@ -11,108 +11,118 @@
     
     <div class="page-content">
         <div class="shared-content">
-            <div style="text-align: center;">
-                <a href="./7drl_Banner.png" target="_blank"> <img src="./7drl_Banner.png" alt="7drl_Banner" class="page-headline-image"></a>
-            </div>
             <h2>7DRL 2023 - Seven Days Roguelike Challenge</h2>
             <div class="page-date">March 2023</div>
 
-            <iframe frameborder="0" src="https://itch.io/embed/1965544?linkback=true&amp;bg_color=0a0c10&amp;fg_color=ffd76d&amp;link_color=232323&amp;border_color=ffd76d" width="100%" height="auto"><a href="https://rabbytegames.itch.io/7drl2023">7DRL 2023 - Grand Strategy Roguelike by rabbyte.games, DanOtt</a></iframe>
+            <section>
+                <iframe frameborder="0" src="https://itch.io/embed/1965544?linkback=true&amp;bg_color=0a0c10&amp;fg_color=ffd76d&amp;link_color=232323&amp;border_color=ffd76d" width="100%" height="auto"><a href="https://rabbytegames.itch.io/7drl2023">7DRL 2023 - Grand Strategy Roguelike by rabbyte.games, DanOtt</a></iframe>
+                <table>
+                    <tr>
+                        <td><strong>Engine</strong></td>
+                        <td>
+                            <img src="./../../imgs/unity.png" style="filter: invert();" class="icon-small" alt="Unity">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Platforms</strong></td>
+                        <td>
+                            <img src="./../../imgs/platform-macos.png" style="filter: invert();" class="icon-small" alt="macOS">
+                            <img src="./../../imgs/platform-windows.png" class="icon-small"alt="Windows">
+                            <img src="./../../imgs/webgl.png" class="icon-small" alt="WebGL">
+                        </td>
+                    </tr>
+                </table>
+            </section>
 
-            <table>
-                <tr>
-                    <td class="table-first-row"><strong>Engine</strong></td>
-                    <td>
-                        <img src="./../../imgs/unity.png" style="filter: invert();" class="icon-small" alt="Unity">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="table-first-row"><strong>Platforms</strong></td>
-                    <td>
-                        <img src="./../../imgs/platform-macos.png" style="filter: invert();" class="icon-small" alt="macOS">
-                        <img src="./../../imgs/platform-windows.png" class="icon-small"alt="Windows">
-                        <img src="./../../imgs/webgl.png" class="icon-small" alt="WebGL">
-                    </td>
-                </tr>
-            </table>
-
-            <h3>Features</h3>
-            <p>* Custom Localization</p>
-            <p>* World Generator</p>
-            <p>* World Slice Renderer</p>
-            <a href="#menu"><p>* Menu System</p></a>
-            <a href="#family"><p>* Family Generator</p></a>
-            <a href="#wind"><p>* Wind Simulation</p></a>
-            <a href="#day_night"><p>* Simulation Steps for Day/Night Cycle</p></a>
-            <a href="#terraform"><p>* A Terraform Brush</p></a>
-
-            <h3>About</h3>
-            <p>A tech demo made during 7DRL challenge 2023.</p>
-            <p>I spent way too much time on world and character generation and setting up the code architecture so there is no actual gameplay.</p>
-            <a href="./7DRL_Screenshot_4.png" target="_blank"><img src="./7DRL_Screenshot_4.png" alt="7DRL_Screenshot_4.png" class="page-image-wide"></a>
-            <p>The idea was to make a roguelike combining classic roguelike concepts with colony sim gameplay (as in Rimworld, Norland) and grand strategy elements(Crusader Kings)</p>
-            <p>The player would control a royal family and has to manage a small kingdom.</p>
-            <a href="./7DRL_Screenshot_3.png" target="_blank"><img src="./7DRL_Screenshot_3.png" alt="7DRL_Screenshot_3.png" class="page-image-wide"></a>
+            <section>   
+                <h3 tag="about">About</h3>
+                <p>A tech demo made during 7DRL challenge 2023.</p>
+                <p>I spent way too much time on world and character generation and setting up the code architecture so there is no actual gameplay.</p>
+                <a href="./7DRL_Screenshot_4.png" target="_blank"><img src="./7DRL_Screenshot_4.png" alt="7DRL_Screenshot_4.png" class="page-image-wide"></a>
+                <p>The idea was to make a roguelike combining classic roguelike concepts with colony sim gameplay (as in Rimworld, Norland) and grand strategy elements(Crusader Kings)</p>
+                <p>The player would control a royal family and has to manage a small kingdom.</p>
+                <a href="./7DRL_Screenshot_3.png" target="_blank"><img src="./7DRL_Screenshot_3.png" alt="7DRL_Screenshot_3.png" class="page-image-wide"></a>
+            </section>
             
-            <h3 id="menu">Menu System</h3>
-            <p>I implemented an old school keyboard shortcut system for the ui elements.</p>
-            <div class="gallery">
-                <a href="./7DRL_Screenshot_0.png" target="_blank"> <img src="./7DRL_Screenshot_0.png" alt="7DRL_Screenshot_0.png" class="page-image-wide"></a>
-                <a href="./7DRL_Screenshot_1.png" target="_blank"><img src="./7DRL_Screenshot_1.png" alt="7DRL_Screenshot_1.png" class="page-image-wide"></a>
-                <a href="./7DRL_Screenshot_2.png" target="_blank"><img src="./7DRL_Screenshot_2.png" alt="7DRL_Screenshot_2.png" class="page-image-wide"></a>
-            </div>
+            <section>
+                <h3 tag="world_slice">World Slice Visualizer</h3>
+                <p>Although the world appears to be 2D, it is actually a 3D terrain mesh rendered with an orthographic camera. It is regenerated whenever the viewport size or camera position changes. </p>
+                <a href="./world_slice_1.gif" target="_blank"> <img src="./world_slice_1.gif" alt="world_slice_1.gif" class="page-image-wide"></a>
+                <p>The world slice visualizer samples a low-resolution dataset from the world data when zooming out very far. This allows for very large world sizes that can always be rendered without performance impact.</p>
+                <a href="./world_slice_2.gif" target="_blank"> <img src="./world_slice_2.gif" alt="world_slice_2.gif" class="page-image-wide"></a>
+            </section>
+
+            <section>
+                <h3 id="menu">Menu System</h3>
+                <p>I implemented an old school keyboard shortcut system for the ui elements.</p>
+                <div class="gallery">
+                    <a href="./7DRL_Screenshot_0.png" target="_blank"> <img src="./7DRL_Screenshot_0.png" alt="7DRL_Screenshot_0.png" class="page-image-wide"></a>
+                    <a href="./7DRL_Screenshot_1.png" target="_blank"><img src="./7DRL_Screenshot_1.png" alt="7DRL_Screenshot_1.png" class="page-image-wide"></a>
+                    <a href="./7DRL_Screenshot_2.png" target="_blank"><img src="./7DRL_Screenshot_2.png" alt="7DRL_Screenshot_2.png" class="page-image-wide"></a>
+                </div>
+            </section>
+
+            <section>
+                <h3 id="biomes">Biomes</h3>
+                <div class="gallery">
+                <a href="./7DRL_BG.png" target="_blank"><img src="./7DRL_BG.png" alt="7DRL_BG.png" class="page-image-wide"></a>
+                <a href="./7DRL_Biomes_Variations.gif" target="_blank"><img src="./7DRL_Biomes_Variations.gif" alt="7DRL_Biomes_Variations.gif" class="page-image-wide"></a>
+                <a href="./7DRL_Biomes.gif" target="_blank"><img src="./7DRL_Biomes.gif" alt="7DRL_Biomes.gif" class="page-image-wide"></a>
+                </div>
+            </section>
+
+            <section>
+                <h3 id="wind">Wind Visualization</h3>
+                <div class="gallery">
+                    <a href="./7DRL_Wind.gif" target="_blank"><img src="./7DRL_Wind.gif" alt="7DRL_Wind.gif" class="page-image-square"></a>
+                    <p>The wind direction for each cell visualized with arrows via a shader</p>
+                    <a href="./7DRL_WindAnimated.gif" target="_blank"><img src="./7DRL_WindAnimated.gif" alt="7DRL_WindAnimated.gif" class="page-image-square"></a>
+                </div>
+            </section>
+
+            <section>
+                <h3 id="family">Family Generator</h3>            
+                <div class="gallery">
+                    <a href="./7DRL_Sex.gif" target="_blank"><img src="./7DRL_Sex.gif" alt="7DRL_Sex.gif" class="page-image-wide-small"></a>
+                    <a href="./7DRL_familyTree.png" target="_blank"><img src="./7DRL_familyTree.png" alt="7DRL_familyTree.png" class="page-image-wide"></a>
+                    <a href="./7DRL_FamilyTree4.gif" target="_blank"><img src="./7DRL_FamilyTree4.gif" alt="7DRL_FamilyTree4.gif" class="page-image-wide"></a>
+                    <a href="./7DRL_FamilyTrees.gif" target="_blank"><img src="./7DRL_FamilyTrees.gif" alt="7DRL_FamilyTrees.gif" class="page-image-wide"></a>
+                    <a href="./chat_gpt.jpg" target="_blank"><img src="./chat_gpt.jpg" alt="chat_gpt.jpg" class="page-image-wide"></a>
+                    <p>The names for the generator were provided by chat-gpt.</p>
+                </div>
+            </section>
+
+            <section>
+                <h3 id="day_night">Day/Night Cycle</h3>
+                <div class="gallery">
+                    <a href="./7DRL_TestCharacter.gif" target="_blank"><img src="./7DRL_TestCharacter.gif" alt="7DRL_TestCharacter.gif" class="page-image-wide"></a>
+                    <p>To visualize the day/night cycle, I used a similar approach as in Rimworld, with shadow casting volumes for buildings</p>
+                    <a href="./7DRL_TestCharacterAndHouse.gif" target="_blank"><img src="./7DRL_TestCharacterAndHouse.gif" alt="7DRL_TestCharacterAndHouse.gif" class="page-image-wide"></a>
+                </div>
+            </section>
+
+            <section>
+                <h3 id="terraform">Terraform Brush</h3>
+                <div class="gallery">
+                    <p>With weird looking attempts on drawing smileys onto the terrain..</p>
+                    <a href="./7DRL_MapTool.gif" target="_blank"><img src="./7DRL_MapTool.gif" alt="7DRL_MapTool.gif" class="page-image-square"></a>
+                    <a href="./7DRL_MapToolSmiley.gif" target="_blank"><img src="./7DRL_MapToolSmiley.gif" alt="7DRL_MapToolSmiley.gif" class="page-image-square"></a>
+                </div>
+            </section>
             
-            <h3 id="biomes">Biomes</h3>
-            <div class="gallery">
-            <a href="./7DRL_BG.png" target="_blank"><img src="./7DRL_BG.png" alt="7DRL_BG.png" class="page-image-wide"></a>
-            <a href="./7DRL_Biomes_Variations.gif" target="_blank"><img src="./7DRL_Biomes_Variations.gif" alt="7DRL_Biomes_Variations.gif" class="page-image-wide"></a>
-            <a href="./7DRL_Biomes.gif" target="_blank"><img src="./7DRL_Biomes.gif" alt="7DRL_Biomes.gif" class="page-image-wide"></a>
-            </div>
-
-            <h3 id="wind">Wind Visualization</h3>
-            <div class="gallery">
-                <a href="./7DRL_Wind.gif" target="_blank"><img src="./7DRL_Wind.gif" alt="7DRL_Wind.gif" class="page-image-square"></a>
-                <p>The wind direction for each cell visualized with arrows via a shader</p>
-                <a href="./7DRL_WindAnimated.gif" target="_blank"><img src="./7DRL_WindAnimated.gif" alt="7DRL_WindAnimated.gif" class="page-image-square"></a>
-            </div>
-
-            <h3 id="family">Family Generator</h3>            
-            <div class="gallery">
-                <a href="./7DRL_Sex.gif" target="_blank"><img src="./7DRL_Sex.gif" alt="7DRL_Sex.gif" class="page-image-wide-small"></a>
-                <a href="./7DRL_familyTree.png" target="_blank"><img src="./7DRL_familyTree.png" alt="7DRL_familyTree.png" class="page-image-wide"></a>
-                <a href="./7DRL_FamilyTree4.gif" target="_blank"><img src="./7DRL_FamilyTree4.gif" alt="7DRL_FamilyTree4.gif" class="page-image-wide"></a>
-                <a href="./7DRL_FamilyTrees.gif" target="_blank"><img src="./7DRL_FamilyTrees.gif" alt="7DRL_FamilyTrees.gif" class="page-image-wide"></a>
-                <a href="./chat_gpt.jpg" target="_blank"><img src="./chat_gpt.jpg" alt="chat_gpt.jpg" class="page-image-wide"></a>
-                <p>The names for the generator were provided by chat-gpt.</p>
-            </div>
-
-            <h3 id="day_night">Day/Night Cycle</h3>
-            
-            <div class="gallery">
-                <a href="./7DRL_TestCharacter.gif" target="_blank"><img src="./7DRL_TestCharacter.gif" alt="7DRL_TestCharacter.gif" class="page-image-wide"></a>
-                <p>To visualize the day/night cycle, I used a similar approach as in Rimworld, with shadow casting volumes for buildings</p>
-                <a href="./7DRL_TestCharacterAndHouse.gif" target="_blank"><img src="./7DRL_TestCharacterAndHouse.gif" alt="7DRL_TestCharacterAndHouse.gif" class="page-image-wide"></a>
-            </div>
-
-            <h3 id="terraform">Terraform Brush</h3>
-            <div class="gallery">
-                <p>With weird looking attempts on drawing smileys onto the terrain..</p>
-                <a href="./7DRL_MapTool.gif" target="_blank"><img src="./7DRL_MapTool.gif" alt="7DRL_MapTool.gif" class="page-image-square"></a>
-                <a href="./7DRL_MapToolSmiley.gif" target="_blank"><img src="./7DRL_MapToolSmiley.gif" alt="7DRL_MapToolSmiley.gif" class="page-image-square"></a>
-            </div>
-            
-
-            <h3>Screenshots - Misc</h3>
-            <div class="gallery">
-                <a href="./7DRL2.gif" target="_blank"><img src="./7DRL2.gif" alt="7DRL2.gif" class="page-image-wide"></a>
-                <a href="./7DRL.gif" target="_blank"><img src="./7DRL.gif" alt="7DRL.gif" class="page-image-wide"></a>
-                <a href="./7DRL_FarmTest.gif" target="_blank"><img src="./7DRL_FarmTest.gif" alt="7DRL_FarmTest.gif" class="page-image-wide"></a>
-                <a href="./7DRL_FarmTest2.gif" target="_blank"><img src="./7DRL_FarmTest2.gif" alt="7DRL_FarmTest2.gif" class="page-image-wide"></a>
-                <a href="./7DRL_8192x8192.gif" target="_blank"><img src="./7DRL_8192x8192.gif" alt="7DRL_8192x8192.gif" class="page-image-wide"></a>
-                <a href="./7DRL_16384x16384.gif" target="_blank"><img src="./7DRL_16384x16384.gif" alt="7DRL_16384x16384.gif" class="page-image-wide"></a>
+            <section>
+                <h3 id="misc">Misc Screenshots</h3>
+                <a href="./7DRL_FarmTest.gif" target="_blank"><img src="./7DRL_FarmTest.gif" alt="7DRL_FarmTest.gif" class="page-image-square"></a>
+                <a href="./7DRL_FarmTest2.gif" target="_blank"><img src="./7DRL_FarmTest2.gif" alt="7DRL_FarmTest2.gif" class="page-image-square"></a>
+                
+                <a href="./7DRL2.gif" target="_blank"><img src="./7DRL2.gif" alt="7DRL2.gif" class="page-image-square"></a>
+                <a href="./7DRL.gif" target="_blank"><img src="./7DRL.gif" alt="7DRL.gif" class="page-image-square"></a>
                 <a href="./7DRL_BG4.png" target="_blank"><img src="./7DRL_BG4.png" alt="7DRL_BG4.png" class="page-image-wide"></a>
-            </div>
+                <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/7DRL?src=hash&amp;ref_src=twsrc%5Etfw">#7DRL</a> day one - world streaming and a bit look dev <a href="https://t.co/rlQX1rhVFu">pic.twitter.com/rlQX1rhVFu</a></p>&mdash; Ðan (@its_dan_ott) <a href="https://twitter.com/its_dan_ott/status/1632389608498507777?ref_src=twsrc%5Etfw">March 5, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/7drl?src=hash&amp;ref_src=twsrc%5Etfw">#7drl</a> - day 3.5 - rewrote the rendering part - now supports all aspect ratios (was locked to 1:1 before) - did some stress testing on world sizes🤓<br><br>mapsize = 512 * 16 = 8.192 x 8.192 = 67.108.864 cells = 57 Seconds generation time <a href="https://t.co/WkB0c3M9gj">pic.twitter.com/WkB0c3M9gj</a></p>&mdash; Ðan (@its_dan_ott) <a href="https://twitter.com/its_dan_ott/status/1633204919485231104?ref_src=twsrc%5Etfw">March 7, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </section>
         </div>
+
         <div class="go-to-top">
             <a href="#top">Scroll to top</a>
         </div>

@@ -27,9 +27,9 @@ h2 {
 }
 
 h3 { 
-    color:#c8cacb;
-    font-weight: 400;
-    font-style: normal;
+    color:#bfd0d8;
+    font-weight: 800;
+    font-style:normal;
 }
 
 p {
@@ -39,6 +39,14 @@ p {
 
 a {
     color: #ffd76d; 
+}
+
+section {
+    margin-bottom: 5vh;/*10em;*/
+}
+
+section:last-child {
+    margin-bottom: 0;
 }
 
 a:hover {
@@ -56,7 +64,7 @@ td {
     text-align:center;
 }
 
-.table-first-row {
+td:first-child{
     text-align: left;
 }
 
