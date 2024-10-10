@@ -256,6 +256,16 @@ td:not(:first-child) {
     max-height: 300px; 
 }
 
+.aspect-ratio-16-9 {
+    text-align: center;
+    aspect-ratio: 16/9;
+}
+
+.aspect-ratio-4-3 {
+    text-align: center;
+    aspect-ratio: 16/9;
+}
+
 @media (max-width: 800px) {
     .gallery {
         grid-template-columns: repeat(2, 1fr);
