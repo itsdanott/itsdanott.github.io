@@ -36,7 +36,7 @@
 
             <section>   
                 <h3 tag="about">About</h3>
-                <p>A tech demo made during 7DRL challenge 2023.</p>
+                <p>A procgen experiment made during the <a href="https://itch.io/jam/7drl-challenge-2023">7DRL challenge 2023.</a></p>
                 <p>I spent way too much time on world and character generation and setting up the code architecture so there is no actual gameplay.</p>
                 <a href="./7DRL_Screenshot_4.png" target="_blank"><img src="./7DRL_Screenshot_4.png" alt="7DRL_Screenshot_4.png" class="page-image-wide"></a>
                 <p>The idea was to make a roguelike combining classic roguelike concepts with colony sim gameplay (as in Rimworld, Norland) and grand strategy elements(Crusader Kings)</p>
@@ -63,24 +63,6 @@
             </section>
 
             <section>
-                <h3 id="biomes">Biomes</h3>
-                <div class="gallery">
-                <a href="./7DRL_BG.png" target="_blank"><img src="./7DRL_BG.png" alt="7DRL_BG.png" class="page-image-wide"></a>
-                <a href="./7DRL_Biomes_Variations.gif" target="_blank"><img src="./7DRL_Biomes_Variations.gif" alt="7DRL_Biomes_Variations.gif" class="page-image-wide"></a>
-                <a href="./7DRL_Biomes.gif" target="_blank"><img src="./7DRL_Biomes.gif" alt="7DRL_Biomes.gif" class="page-image-wide"></a>
-                </div>
-            </section>
-
-            <section>
-                <h3 id="wind">Wind Visualization</h3>
-                <div class="gallery">
-                    <a href="./7DRL_Wind.gif" target="_blank"><img src="./7DRL_Wind.gif" alt="7DRL_Wind.gif" class="page-image-square"></a>
-                    <p>The wind direction for each cell visualized with arrows via a shader</p>
-                    <a href="./7DRL_WindAnimated.gif" target="_blank"><img src="./7DRL_WindAnimated.gif" alt="7DRL_WindAnimated.gif" class="page-image-square"></a>
-                </div>
-            </section>
-
-            <section>
                 <h3 id="family">Family Generator</h3>            
                 <p>During the jam I added a raw version of a family generator where the visual appearance and the stats of the parents would be inherited to younger generations. </p>
                 <div class="gallery">
@@ -94,11 +76,31 @@
             </section>
 
             <section>
+                <h3 id="biomes">World Generation & Biomes</h3>
+                <p>The world is generated with multiple layers of Perlin Noise - for each cell humidity and temperature values are generated which then define the biome of the cell.</p>
+                <div class="gallery">
+                <a href="./7DRL_BG.png" target="_blank"><img src="./7DRL_BG.png" alt="7DRL_BG.png" class="page-image-wide"></a>
+                <a href="./7DRL_Biomes_Variations.gif" target="_blank"><img src="./7DRL_Biomes_Variations.gif" alt="7DRL_Biomes_Variations.gif" class="page-image-wide"></a>
+                <a href="./7DRL_Biomes.gif" target="_blank"><img src="./7DRL_Biomes.gif" alt="7DRL_Biomes.gif" class="page-image-wide"></a>
+                </div>
+                <p>I experimented with several visual styles e.g. for the elevation lines.</p>
+            </section>
+
+            <section>
                 <h3 id="day_night">Day/Night Cycle</h3>
                 <div class="gallery">
                     <a href="./7DRL_TestCharacter.gif" target="_blank"><img src="./7DRL_TestCharacter.gif" alt="7DRL_TestCharacter.gif" class="page-image-wide"></a>
-                    <p>To visualize the day/night cycle, I used a similar approach as in Rimworld, with shadow casting volumes for buildings</p>
                     <a href="./7DRL_TestCharacterAndHouse.gif" target="_blank"><img src="./7DRL_TestCharacterAndHouse.gif" alt="7DRL_TestCharacterAndHouse.gif" class="page-image-wide"></a>
+                    <p>To visualize the day/night cycle, I used a similar approach as in Rimworld, with shadow casting volumes for buildings</p>
+                </div>
+            </section>
+
+            <section>
+                <h3 id="wind">Wind Visualization</h3>
+                <div class="gallery">
+                    <a href="./7DRL_Wind.gif" target="_blank"><img src="./7DRL_Wind.gif" alt="7DRL_Wind.gif" class="page-image-square"></a>
+                    <p>The wind direction for each cell visualized with arrows via a shader</p>
+                    <a href="./7DRL_WindAnimated.gif" target="_blank"><img src="./7DRL_WindAnimated.gif" alt="7DRL_WindAnimated.gif" class="page-image-square"></a>
                 </div>
             </section>
 
