@@ -5,6 +5,7 @@ html, body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -78,6 +79,11 @@ a:hover {
     padding-bottom: 10px;
 }
 
+.go-to-top {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
 .footer-icon {
     max-height: max(min(2.5vh, 32px), 24px);
     color: #ffae42;
@@ -136,8 +142,6 @@ a:hover {
     width: 48%;
     height: auto;
     aspect-ratio: 1/1;
-    /* width: 380px;
-    height: 380px; */
 }
 
 .gallery {
@@ -189,7 +193,6 @@ a:hover {
     flex: 0 0 100px;
     text-align: right;
     margin-right: 20px;
-    /* color: #ffd76d; */
 }
 
 .timeline-content {
@@ -221,9 +224,7 @@ a:hover {
 }
 
 .timeline-entry:hover .timeline-image-container {
-    /* Adjust this based on your image height */
     max-height: 300px; 
-    /* max-height: 20vh; */
 }
 
 @media (max-width: 800px) {
