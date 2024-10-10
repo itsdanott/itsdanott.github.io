@@ -42,7 +42,7 @@ a {
 }
 
 section {
-    margin-bottom: 5vh;/*10em;*/
+    margin-bottom: 3em;/*10em;*/
 }
 
 section:last-child {
@@ -54,18 +54,18 @@ a:hover {
 }
 
 table {
-    border-collapse: collapse;
-    width: 100%;
+    width: auto;
     border: 1px solid #ffd76d;
+    padding: 0;
+    table-layout: auto;
 }
 
 td {
-    padding: 15px;
-    text-align:center;
+    padding: 8px;
 }
 
-td:first-child{
-    text-align: left;
+td:not(:first-child) {
+    width: 100%; 
 }
 
 .page-title {
@@ -102,9 +102,10 @@ td:first-child{
     padding-bottom: 10px;
 }
 
-.go-to-top {
+.scroll-to-top {
     text-align: center;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .footer-icon {
@@ -118,8 +119,8 @@ td:first-child{
 }
 
 .icon-small {
-    width: min(20%, 100px);
-    height: auto;
+    height: 2.5em;
+    width: auto;
 }
 
 .circular-image {
@@ -134,15 +135,19 @@ td:first-child{
 
 .shared-content {
     max-width: 800px;
-    margin: 50px auto;
+    margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
 }
 
+.page-headline-image-container {
+    text-align: center;
+}
 .page-headline-image { 
     text-align: center;
     border-radius: 5%;
-    width: 50%;
+    width: 25%;
+    padding: 1em;
 }
 
 .page-image-wide { 
@@ -187,7 +192,7 @@ td:first-child{
     flex-direction: column;
     position: relative;
     max-width: 800px;
-    margin: 50px auto;
+    margin: 0px auto;
     padding-left: 20px;
     padding-right: 20px;
 }
