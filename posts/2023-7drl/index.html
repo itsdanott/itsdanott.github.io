@@ -6,7 +6,7 @@
     <title>otone - 7DRL 2023</title>
 </head>
 <body>
-    <div class="page-title"><h1>otone</h1></div>
+    <div class="page-title"><h1>o:tone</h1></div>
     <div class="page-nav"><a href="./../../index.html">Timeline</a> <a href="./../../about.html">About</a></div>
     
     <div class="page-content">
@@ -18,9 +18,9 @@
             <div class="page-date">March 2023</div>
 
             <iframe frameborder="0" src="https://itch.io/embed/1965544?linkback=true&amp;bg_color=0a0c10&amp;fg_color=ffd76d&amp;link_color=232323&amp;border_color=ffd76d" width="552" height="167"><a href="https://rabbytegames.itch.io/7drl2023">7DRL 2023 - Grand Strategy Roguelike by rabbyte.games, DanOtt</a></iframe>
-            <p>Engine:</p>
+            <h3>Engine:</h3>
             <img src="./../../imgs/unity.png" style="filter: invert();" class="icon-small">
-            <p>Platforms:</p>
+            <h3>Platforms:</h3>
             <img src="./../../imgs/webgl.png" class="icon-small">
             <img src="./../../imgs/platform-windows.png" class="icon-small">
             <img src="./../../imgs/platform-macos.png" style="filter: invert();" class="icon-small">
@@ -35,56 +35,74 @@
             <a href="#day_night"><p>* Simulation Steps for Day/Night Cycle</p></a>
             <a href="#terraform"><p>* A Terraform Brush</p></a>
 
-
-            <h3>Screenshots</h3>
+            <h3>About</h3>
+            <p>tech demo was developed during 7DRL challenge 2023.</p>
+            <p>I spent way too much time on world and character generation and setting up the code architecture so there is no actual gameplay.</p>
             <a href="./7DRL_Screenshot_4.png" target="_blank"><img src="./7DRL_Screenshot_4.png" alt="7DRL_Screenshot_4.png" class="page-image-wide"></a>
-            <a href="./7DRL_Screenshot_3.png" target="_blank"><img src="./7DRL_Screenshot_3.png" alt="7DRL2023" class="page-image-wide"></a>
-
+            <p>The idea was make a roguelike combining classic roguelike gameplay with colony sim (as in Rimworld, Norland) and grand strategy elements(Crusader Kings)</p>
+            <p>The player would control a royal family and has to manage a small kingdom.</p>
+            <a href="./7DRL_Screenshot_3.png" target="_blank"><img src="./7DRL_Screenshot_3.png" alt="7DRL_Screenshot_3.png" class="page-image-wide"></a>
+            
             <h3 id="menu">Menu System</h3>
             <p>I implemented an old school keyboard shortcut system for the ui elements.</p>
-            <a href="./7DRL_Screenshot_0.png" target="_blank"> <img src="./7DRL_Screenshot_0.png" alt="7DRL2023" class="page-image-wide"></a>
-            <a href="./7DRL_Screenshot_1.png" target="_blank"><img src="./7DRL_Screenshot_1.png" alt="7DRL2023" class="page-image-wide"></a>
-            <a href="./7DRL_Screenshot_2.png" target="_blank"><img src="./7DRL_Screenshot_2.png" alt="7DRL2023" class="page-image-wide"></a>
-
+            <div class="gallery">
+                <a href="./7DRL_Screenshot_0.png" target="_blank"> <img src="./7DRL_Screenshot_0.png" alt="7DRL_Screenshot_0.png" class="page-image-wide"></a>
+                <a href="./7DRL_Screenshot_1.png" target="_blank"><img src="./7DRL_Screenshot_1.png" alt="7DRL_Screenshot_1.png" class="page-image-wide"></a>
+                <a href="./7DRL_Screenshot_2.png" target="_blank"><img src="./7DRL_Screenshot_2.png" alt="7DRL_Screenshot_2.png" class="page-image-wide"></a>
+            </div>
+            
             <h3 id="biomes">Biomes</h3>
-            <a href="./7DRL_Biomes_Variations.gif" target="_blank"><img src="./7DRL_Biomes_Variations.gif" alt="7DRL_Biomes_Variations.gif" class="page-image-square"></a>
-            <a href="./7DRL_Biomes.gif" target="_blank"><img src="./7DRL_Biomes.gif" alt="7DRL_Biomes.gif" class="page-image-square"></a>
+            <div class="gallery">
+            <a href="./7DRL_BG.png" target="_blank"><img src="./7DRL_BG.png" alt="7DRL_BG.png" class="page-image-wide"></a>
+            <a href="./7DRL_Biomes_Variations.gif" target="_blank"><img src="./7DRL_Biomes_Variations.gif" alt="7DRL_Biomes_Variations.gif" class="page-image-wide"></a>
+            <a href="./7DRL_Biomes.gif" target="_blank"><img src="./7DRL_Biomes.gif" alt="7DRL_Biomes.gif" class="page-image-wide"></a>
+            </div>
 
             <h3 id="wind">Wind Visualization</h3>
-            <a href="./7DRL_Wind.gif" target="_blank"><img src="./7DRL_Wind.gif" alt="7DRL_Wind.gif" class="page-image-square"></a>
-            <a href="./7DRL_WindAnimated.gif" target="_blank"><img src="./7DRL_WindAnimated.gif" alt="7DRL_WindAnimated.gif" class="page-image-square"></a>
+            <div class="gallery">
+                <a href="./7DRL_Wind.gif" target="_blank"><img src="./7DRL_Wind.gif" alt="7DRL_Wind.gif" class="page-image-square"></a>
+                <p>The wind direction for each cell visualized with arrows via a shader</p>
+                <a href="./7DRL_WindAnimated.gif" target="_blank"><img src="./7DRL_WindAnimated.gif" alt="7DRL_WindAnimated.gif" class="page-image-square"></a>
+            </div>
 
             <h3 id="family">Family Generator</h3>            
-            <a href="./7DRL_Sex.gif" target="_blank"><img src="./7DRL_Sex.gif" alt="7DRL_Sex.gif" class="page-image-wide-small"></a>
-            <a href="./7DRL_familyTree.png" target="_blank"><img src="./7DRL_familyTree.png" alt="7DRL_familyTree.png" class="page-image-wide"></a>
-            <a href="./7DRL_FamilyTree4.gif" target="_blank"><img src="./7DRL_FamilyTree4.gif" alt="7DRL_FamilyTree4.gif" class="page-image-wide"></a>
-            <a href="./7DRL_FamilyTrees.gif" target="_blank"><img src="./7DRL_FamilyTrees.gif" alt="7DRL_FamilyTrees.gif" class="page-image-wide"></a>
-            <p>The names for the generator were provided by Chat GPT.</p>
-            <a href="./chatGPT.png" target="_blank"><img src="./chatGPT.png" alt="chatGPT.png" class="page-image-wide"></a>
+            <div class="gallery">
+                <a href="./7DRL_Sex.gif" target="_blank"><img src="./7DRL_Sex.gif" alt="7DRL_Sex.gif" class="page-image-wide-small"></a>
+                <a href="./7DRL_familyTree.png" target="_blank"><img src="./7DRL_familyTree.png" alt="7DRL_familyTree.png" class="page-image-wide"></a>
+                <a href="./7DRL_FamilyTree4.gif" target="_blank"><img src="./7DRL_FamilyTree4.gif" alt="7DRL_FamilyTree4.gif" class="page-image-wide"></a>
+                <a href="./7DRL_FamilyTrees.gif" target="_blank"><img src="./7DRL_FamilyTrees.gif" alt="7DRL_FamilyTrees.gif" class="page-image-wide"></a>
+                <a href="./chat_gpt.jpg" target="_blank"><img src="./chat_gpt.jpg" alt="chat_gpt.jpg" class="page-image-wide"></a>
+                <p>The names for the generator were provided by chat-gpt.</p>
+            </div>
 
             <h3 id="day_night">Day/Night Cycle</h3>
-            <a href="./7DRL_TestCharacter.gif" target="_blank"><img src="./7DRL_TestCharacter.gif" alt="7DRL_TestCharacter.gif" class="page-image-wide"></a>
-            <a href="./7DRL_TestCharacterAndHouse.gif" target="_blank"><img src="./7DRL_TestCharacterAndHouse.gif" alt="7DRL_TestCharacterAndHouse.gif" class="page-image-wide"></a>
+            
+            <div class="gallery">
+                <a href="./7DRL_TestCharacter.gif" target="_blank"><img src="./7DRL_TestCharacter.gif" alt="7DRL_TestCharacter.gif" class="page-image-wide"></a>
+                <a href="./7DRL_TestCharacterAndHouse.gif" target="_blank"><img src="./7DRL_TestCharacterAndHouse.gif" alt="7DRL_TestCharacterAndHouse.gif" class="page-image-wide"></a>
+            </div>
 
             <h3>Terraform Brush</h3>
             <p>With weird looking attempts on drawing smileys onto the terrain..</p>
+            
             <a href="./7DRL_MapTool.gif" target="_blank"><img src="./7DRL_MapTool.gif" alt="7DRL_MapTool.gif" class="page-image-square"></a>
             <a href="./7DRL_MapToolSmiley.gif" target="_blank"><img src="./7DRL_MapToolSmiley.gif" alt="7DRL_MapToolSmiley.gif" class="page-image-square"></a>
 
             <h3>Screenshots - Misc</h3>
-            <a href="./7DRL2.gif" target="_blank"><img src="./7DRL2.gif" alt="7DRL2.gif" class="page-image-wide"></a>
-            <a href="./7DRL.gif" target="_blank"><img src="./7DRL.gif" alt="7DRL.gif" class="page-image-wide"></a>
-            <a href="./7DRL_FarmTest.gif" target="_blank"><img src="./7DRL_FarmTest.gif" alt="7DRL_FarmTest.gif" class="page-image-wide"></a>
-            <a href="./7DRL_FarmTest2.gif" target="_blank"><img src="./7DRL_FarmTest2.gif" alt="7DRL_FarmTest2.gif" class="page-image-wide"></a>
-            <a href="./7DRL_8192x8192.gif" target="_blank"><img src="./7DRL_8192x8192.gif" alt="7DRL_8192x8192.gif" class="page-image-wide"></a>
-            <a href="./7DRL_16384x16384.gif" target="_blank"><img src="./7DRL_16384x16384.gif" alt="7DRL_16384x16384.gif" class="page-image-wide"></a>
-            <a href="./7DRL_BG.png" target="_blank"><img src="./7DRL_BG.png" alt="7DRL_BG.png" class="page-image-wide"></a>
-            <a href="./7DRL_BG4.png" target="_blank"><img src="./7DRL_BG4.png" alt="7DRL_BG4.png" class="page-image-wide"></a>
+            <div class="gallery">
+                <a href="./7DRL2.gif" target="_blank"><img src="./7DRL2.gif" alt="7DRL2.gif" class="page-image-wide"></a>
+                <a href="./7DRL.gif" target="_blank"><img src="./7DRL.gif" alt="7DRL.gif" class="page-image-wide"></a>
+                <a href="./7DRL_FarmTest.gif" target="_blank"><img src="./7DRL_FarmTest.gif" alt="7DRL_FarmTest.gif" class="page-image-wide"></a>
+                <a href="./7DRL_FarmTest2.gif" target="_blank"><img src="./7DRL_FarmTest2.gif" alt="7DRL_FarmTest2.gif" class="page-image-wide"></a>
+                <a href="./7DRL_8192x8192.gif" target="_blank"><img src="./7DRL_8192x8192.gif" alt="7DRL_8192x8192.gif" class="page-image-wide"></a>
+                <a href="./7DRL_16384x16384.gif" target="_blank"><img src="./7DRL_16384x16384.gif" alt="7DRL_16384x16384.gif" class="page-image-wide"></a>
+                <a href="./7DRL_BG4.png" target="_blank"><img src="./7DRL_BG4.png" alt="7DRL_BG4.png" class="page-image-wide"></a>
+            </div>
         </div>
     </div> 
     
     <div class="page-footer">
-        <a href="https://github.com/itsdanott"><img src="./../../github-mark-white.svg" alt="github" class="footer-icon"></a>
+        <a href="https://github.com/itsdanott"><img src="./../../imgs/github.svg" alt="github" class="footer-icon"></a>
     </div>
 </body>
 </html>
