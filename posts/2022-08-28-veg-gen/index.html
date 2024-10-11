@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../../styles.css">
+    <title>o:tone - Vegetation Generator</title>
+    <link rel="icon" type="image/x-icon" href="./../../imgs/otone.jpeg">
+</head>
+<body>
+    <div class="page-title" id="top"><h1>o:tone</h1></div>
+    <div class="page-nav"><a href="./../../index.html">Timeline</a> <a href="./../../about.html">About</a></div>
+    
+    <div class="page-content">
+        <div class="shared-content">
+            <h2>Vegetation Generator</h2>
+            <div class="page-date">August 28, 2022</div>
+
+            <section>
+                <table>
+                    <tr>
+                        <td><strong>Engine</strong></td>
+                        <td>
+                            <img src="./../../imgs/unity.png" style="filter: invert();" class="icon-small" alt="Unity">
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h3>About</h3>
+                <p>After seeing <a href="https://www.youtube.com/watch?v=WLym7frkpKM" target="_blank">Retroshaper's guide on Procedural Trees with Geometry Nodes</a> I translated the concept into unity and made a vegetation generator.</p>
+            </section>
+            
+            <section>
+                <h3>The First Steps - Generating a Trunk</h3>
+                <a href="./vegetation-generator-first-test.gif" target="_blank"> <img src="./vegetation-generator-first-test.gif" alt="vegetation-generator-first-test.gif" class="page-image-wide"></a>
+                <video width="100%" height="auto" controls>
+                    <source src="first_steps.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <section>    
+                <h3>A Tree with Trunk and Leaves</h3>
+                <video width="100%" height="auto" controls>
+                    <source src="short_tree_leaves.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <video width="100%" height="auto" controls>
+                    <source src="tree_leaves.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <i>(Original <a href="https://x.com/its_dan_ott/status/1563982412790566913" target="_blank">Tweet</a>)</i>
+            </section>
+
+            <section>
+                <h3>Sunflower</h3>                
+                <video width="100%" height="auto" controls>
+                    <source src="sunflower.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <i>(Original <a href="https://twitter.com/its_dan_ott/status/1564000596692279296" target="_blank">Tweet</a>)</i>
+            </section>
+
+            <section>
+                <h3>Unity DOTS</h3>
+                Eventually I ported the generator and it's output to Unity DOTS and added it to the world generator I was currently working on. 
+                <blockquote class="twitter-tweet" data-media-max-width="560" data-dnt="true"><p lang="en" dir="ltr">ported the vegetation generator to <a href="https://twitter.com/hashtag/unityDots?src=hash&amp;ref_src=twsrc%5Etfw">#unityDots</a> and added it to the world gen - for now this is not optimized at all, but here we have lots of trees <br> and plants in a small world - all with their own unique seeds <a href="https://t.co/qWcq0ixNMZ">pic.twitter.com/qWcq0ixNMZ</a></p>&mdash; Ðan (@its_dan_ott) <a href="https://twitter.com/its_dan_ott/status/1570020502755852290?ref_src=twsrc%5Etfw">September 14, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </section>  
+
+            <section
+                <h3>Abstract Generations</h3>
+                <p>Here I swapped some meshes with not exactly plant like ones - the result looks quite glitchy:</p>
+                <video width="100%" height="auto" controls>
+                    <source src="glitchy.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+        </div>
+
+        <div class="scroll-to-top">
+            <a href="#top">Scroll to top</a>
+        </div>
+    </div> 
+
+    <div class="page-footer">
+        <a href="https://x.com/its_dan_ott"><img src="./../../imgs/twitter.svg" alt="twitter" style="filter: invert();" class="footer-icon"></a>
+        <a href="https://github.com/itsdanott"><img src="./../../imgs/github.svg" alt="github" class="footer-icon"></a>
+        <a href="https://danott.itch.io/"><img src="./../../imgs/itchio.svg" alt="itch.io" style="filter: invert();" class="footer-icon"></a>
+    </div>
+</body>
+</html>
