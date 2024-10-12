@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../../styles.css">
+    <title>o:tone - Morph Target: Eyes</title>
+    <link rel="icon" type="image/x-icon" href="./../../imgs/otone.jpeg">
+</head>
+<body>
+    <div class="page-title" id="top"><h1>o:tone</h1></div>
+    <div class="page-nav"><a href="./../../index.html">Timeline</a> <a href="./../../about.html">About</a></div>
+    
+    <div class="page-content">
+        <div class="shared-content">
+            <h2>Morph Target: Eyes</h2>
+            <div class="page-date">Sep 17, 2024</div>
+            
+            <section>
+                <h3>First Time Implementing Morph Targets</h3>
+                <p>Today I implemented morph targets for the first time using C++ and OpenGL 4.1.</p> 
+                <p>To get into the topic I made a super simple setup in Blender containing of just a few vertices and a single morph target: <strong>eyes</strong></p>
+                <a href="./blender-setup.png" target="_blank"> <img src="./blender-setup.png" alt="blender-setup.png" class="page-image-wide"></a>
+                <p>I then imported the model using cgltf and used the morph vertex positions as a vertex a attribute.</p>
+
+                <h3>Live Demo</h3>
+                <p>Besides desktop with OpenGL I also did a quick wasm / WebGL build via emscripten. Here's a playable live demo running in the browser:</p>
+                <div class="aspect-ratio-4-3">
+                    <iframe src="./emscripten/index.html" width="100%" height="100%"></iframe>
+                </div>
+                <h3>Controls</h3>
+                <p><strong>Morph Target Blend</strong> = A / D</p>
+                <p><strong>Camera Zoom</strong> = W / S</p>
+                <p><strong>Camera Up / down</strong> = Q / E</p>
+                <p><strong>Orbit Camera</strong> = Up / Down / Right / Left Arrow Keys / Left Mouse Drag</p>
+                <p><i>(Click once to focus the widget, keyboard input won't work without focus)</i></p>
+                <p>There's also a <a href="./emscripten/" target="_blank">fullscreen version</a></p>
+            </section>
+
+        </div>
+
+        <div class="scroll-to-top">
+            <a href="#top">Scroll to top</a>
+        </div>
+    </div> 
+
+    <div class="page-footer">
+        <a href="https://x.com/its_dan_ott"><img src="./../../imgs/twitter.svg" alt="twitter" style="filter: invert();" class="footer-icon"></a>
+        <a href="https://github.com/itsdanott"><img src="./../../imgs/github.svg" alt="github" class="footer-icon"></a>
+        <a href="https://danott.itch.io/"><img src="./../../imgs/itchio.svg" alt="itch.io" style="filter: invert();" class="footer-icon"></a>
+    </div>
+</body>
+</html>

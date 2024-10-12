@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Morph Target: Eyes</title>
+    <style>
+        /* Add your custom styles here */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #000;
+        }
+        #canvas {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<canvas id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+<script>
+    var Module = {
+        canvas: (function() {
+            var canvas = document.getElementById('canvas');
+
+            // Ensure the canvas is in focus
+            canvas.focus();
+
+            return canvas;
+        })()
+    };
+
+    window.getInnerWidth = function() {
+        return window.innerWidth;
+    };
+
+    window.getInnerHeight = function() {
+        return window.innerHeight;
+    };
+
+    window.addEventListener("keydown", function(event) {
+        if(["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].includes(event.key)) {
+            event.preventDefault();
+        }
+    }, false);
+</script>
+<script async type="text/javascript" src="DigitalAvatar_CustomRenderer.js"></script>
+</body>
+</html>
